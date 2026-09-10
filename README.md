@@ -1,38 +1,50 @@
-# HS Git Going — Independent Rebuild
+# HS Git Going — Lesson & Homework
 
-Practice the Git workflow by rebuilding it independently.
+## 1. Lesson — Git Rebuild Notes
 
-## Task
+In your **Lesson folder**, create a Markdown file:
 
-Clone this repository:
+`git-rebuild-workflow.md`
+
+Write the workflow we practiced today in your own words:
+
+```text
+clone → create branch → create index.js → add → commit → push
+```
+
+Explain what each step does.
+
+### Two Easy-to-Miss Points
+
+1. There must be a **space** between `git clone` and the HTTPS URL.
 
 ```bash
 git clone https://github.com/hbycwyh2008/hs-git-going.git
 ```
 
-> Remember: there must be a **space** between `git clone` and the HTTPS URL.
-
-Enter the repository:
-
-```bash
-cd hs-git-going
-```
-
-Create and switch to your own branch **before creating the new file**:
+2. **Create and switch to your branch before creating `index.js`.** When you push, push your own branch:
 
 ```bash
 git switch -c js-yourName
+git push origin js-yourName
 ```
 
-Replace `yourName` with your own name.
+---
 
-Create:
+## 2. Homework — Independent Rebuild
 
-```text
-index.js
+Complete the workflow independently in this repository:
+
+```bash
+git clone https://github.com/hbycwyh2008/hs-git-going.git
+cd hs-git-going
+git switch -c js-yourName
 ```
 
-Add a small amount of valid JavaScript code, then run:
+Then:
+
+1. Create `index.js` and add a small amount of JavaScript.
+2. Run:
 
 ```bash
 git add index.js
@@ -40,43 +52,10 @@ git commit -m "Add JavaScript file"
 git push origin js-yourName
 ```
 
-## Verify on GitHub
+3. Check GitHub and make sure your branch, file, and commit are visible.
 
-Make sure:
+### Homework Evidence
 
-- Your branch is named `js-yourName`
-- `index.js` is on your branch
-- Your commit is visible
-- You did **not** push the change directly to `main`
-
-## Required Workflow
-
-```text
-clone
-→ create branch
-→ create index.js
-→ git add
-→ git commit
-→ git push origin js-yourName
-→ verify on GitHub
-```
-
-## Final Step
-
-After completing the rebuild, create a new repository on your own GitHub account for a real project.
-
-Choose:
-
-- a clear repository name
-- an appropriate visibility setting
-- a `README.md`
-- an appropriate `.gitignore`
-- an appropriate license
-
-Add the link to your new repository to your Homework file.
-
-## Evidence
-
-- Your `js-yourName` branch in this repository
-- Your `index.js` file and commit
-- Your new GitHub repository link
+- Your `js-yourName` branch
+- Your `index.js` file
+- Your commit on GitHub
